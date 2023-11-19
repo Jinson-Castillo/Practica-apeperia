@@ -1,0 +1,260 @@
+:root {
+    --principal: 'Open Sans', sans-serif;
+    --secundaria: 'Montserrat', sans-serif;
+
+    --AzulOscuro: #00161C;
+    --rojo: #E33B3B;
+    --rojoOscuro: #B72E2E;
+    --blanco: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--principal);
+    font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+} 
+
+h3 {   
+    font-size: 3.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+[class$="__contenedor"] {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+[class$="__boton"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    [class$="__boton"]  {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    [class$="__boton"] {
+        margin-top: 5rem;
+    }
+}
+
+/** header **/
+.header {
+    background-color: #00161C;
+    height: 45rem;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(../img/fondo.png);
+        height: 46rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+    }
+}
+
+.header__grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .header__grid {
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navegacion {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.navegacion__link {
+    margin: 0 2rem 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .navegacion__link {
+        color: var(--blanco);
+        margin: 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navegacion__link {
+        margin: 2rem;
+    }
+}
+
+.header__contenido {
+    border-top: 1px solid #103D4A;
+}
+
+@media (min-width: 1024px) {
+    .header__contenido {
+        border: none;
+    }
+}
+
+.header__heading {
+    color: var(--blanco);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 0 4rem;
+}
+
+@media (min-width: 768px) {
+    .header__heading {
+        font-size: 3.2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__heading {
+        margin-top: 8rem;
+        font-family: var(--secundaria);
+    }
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    width: 70%;
+    margin: 2rem auto 0 auto;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .header__texto {
+        width: 65%;
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__texto {
+        width: 40%;
+        margin: 4rem auto 0 auto;
+        line-height: 1.5;
+    }
+}
+
+.header__enlace {
+    border: 1px solid #B72E2E;
+    padding: 1.5rem 8rem;
+    border-radius: .5rem;
+}
+
+/** Destacados **/
+.destacado {
+    display: grid;
+    justify-content: center;
+    background: #DFE3F5
+}
+
+.destacado__heading {
+    margin: 3.6rem 0;
+    font-family: var(--secundaria);
+    text-transform: uppercase;
+    color: #4F4C4C;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.destacado__imagen {
+    padding: 0 5rem;
+}
+
+.destacado__texto {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.destacado__enlace {
+    color:  #E33B3B;
+    border: 1px solid #E33B3B;
+    padding: 1rem 6rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .destacado__enlace {
+        padding: 1rem 3rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .destacado__enlace {
+        margin-top: -2.5rem;
+    }
+}
